@@ -1,0 +1,501 @@
+{
+  "restaurant_name": "Union On Yale",
+  "cuisine": "american",
+  "location": "232 Yale Ave. Claremont, CA, 91711",
+  "sections": [
+    {
+      "name": "Lunch — Salads",
+      "items": [
+        {
+          "name": "Caesar",
+          "description": "Romaine / Parmesan / Caesar Dressing / Croutons",
+          "tags": []
+        },
+        {
+          "name": "Niçoise",
+          "description": "Romane / Roasted Potatoes/ Shallots / Green Beans/ Marinated Cherry Tomatoes / Olives / Champagne Vinaigrette",
+          "tags": []
+        },
+        {
+          "name": "The Wedge",
+          "description": "Mini Iceberg Lettuce / Pickled Cherry Tomatoes / Smoked Bacon Blue Cheese Crumbles / Potato Crisps /Blue Cheese Dressing",
+          "tags": []
+        },
+        {
+          "name": "Arugula Salad",
+          "description": "Crispy Parmesan Chips / Fresh Grated Grana Padano Lemon Vinaigrette",
+          "tags": []
+        },
+        {
+          "name": "Union Salad",
+          "description": "Romane/ Arugula / Shaved Shallots / Carrots / Radishes / Fried Quinoa/ Cream Vinaigrette",
+          "tags": []
+        },
+        {
+          "name": "Pear Salad",
+          "description": "Arugula/ Poached Pears/ Feta Cheese/ Cranberry Vinaigrette Spices Pepitas",
+          "tags": [
+            "GF"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lunch — Personal Sized Wood Fired Pizza",
+      "items": [
+        {
+          "name": "Margherita",
+          "description": "Tomato Sauce / Mozzarella / Basil / Extra Virgin Olive Oil",
+          "tags": []
+        },
+        {
+          "name": "Bianca",
+          "description": "Cream Sauce / Mozzarella / Fontina / Black Truffle Cheese / Thyme",
+          "tags": []
+        },
+        {
+          "name": "Pepperoni & Pickled Pepper",
+          "description": "Tomato Sauce / Pickled Peppers / Mozzarella / Garlic",
+          "tags": []
+        },
+        {
+          "name": "Forest Floor",
+          "description": "Trio of Mushrooms: Hen of the Woods, Cremini and Beech Mozzarella / Fontina / Black Truffle Cheese",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "name": "Lunch — Let's Get Started",
+      "items": [
+        {
+          "name": "A.O.C.",
+          "description": "Amoke Almonds/ Olives/ Corn Nuts",
+          "tags": []
+        },
+        {
+          "name": "Mason Jar",
+          "description": "Marinated Cherry Tomatoes/ Burrata/ Basil Oil/ Black Hawaiian Salt/ Woodfired Flatbread",
+          "tags": []
+        },
+        {
+          "name": "Frites",
+          "description": "Thick Cut Fries/ Truffle Salt/ Served With A Side Of Ketchup & Garlic Aioli",
+          "tags": []
+        },
+        {
+          "name": "Spinach & Artichoke Dip",
+          "description": "(Wood Fired) Trio of cheeses sweetie drop peppers/ wood fired flat bread",
+          "tags": []
+        },
+        {
+          "name": "Cauliflower Ceviche",
+          "description": "Roasted Cauliflower / Persian Cucumbers Aji Amarillo Chilies / Avocado/ Cilantro Lime / House Made Tortilla Chips",
+          "tags": [
+            "GF",
+            "VEGAN"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lunch — Something Warm",
+      "items": [
+        {
+          "name": "Yellow Curry",
+          "description": "Smoked \"Tandoori\" Tofu / Garbanzo Beans/ Carrots/ Coconut Curry / Wild Rice / Cilantro/ Fresno Chillies",
+          "tags": []
+        },
+        {
+          "name": "Soup",
+          "description": "Chef Curated / Served With Sourdough Bread From Creme Bakery",
+          "tags": []
+        },
+        {
+          "name": "The French-O-Tartine",
+          "description": "Creme Bakery Sourdough / Fontina / Chives / Caramelized Onions Beef Stock / Cognac",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "name": "Lunch — The Cold Sandwiches",
+      "items": [
+        {
+          "name": "Burrata Caprese Tartine",
+          "description": "Pickled Tomatoes / Toasted Garlic Bread / Arugula/ Burrata",
+          "tags": []
+        },
+        {
+          "name": "Salami Rosa",
+          "description": "Fra'mani Salami Rosa/ Spicy Capocollo/ Pecorino Cheese/ Pickled Peppers/ Shredded Lettuce/ Caeser Dressing/ Toasted French Roll/ House Chips",
+          "tags": []
+        },
+        {
+          "name": "You Don't Know Jack",
+          "description": "BBQ \"Pulled\" Jackfruit/ Red Bell Pepper/ Shredded Cabbage/ Avocado Mousse/ French Roll/ Arugula Salad w/ Champagne Vinaigrette (Vegan)",
+          "tags": [
+            "VEGAN"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lunch — The Hot Sandwiches",
+      "items": [
+        {
+          "name": "The Meatball",
+          "description": "House-Made 50/50 Pork & Beef Meatballs / Mozzarella Cheese Tomato Sauce / Toasted French Roll / Served with Arugula Salad",
+          "tags": []
+        },
+        {
+          "name": "Jammin' Burger",
+          "description": "6oz Wagyu Beef Patty / Fontina Cheese / Bacon Onion Jam Crispy Onion / Smoked Aioli / Brioche Bun with side of Frites",
+          "tags": []
+        },
+        {
+          "name": "Standard Burger",
+          "description": "6oz All American Beef Patty / American Cheese / Onion/ Tomato Pickles/ Shredded Lettuce/ Thousand Island Dressing/ Brioche Bun with side of Frites",
+          "tags": []
+        },
+        {
+          "name": "The Hot Chick",
+          "description": "Buttermilk Battered Mary's Chicken Breast / Spicy Slaw/ Hot Honey Aioli / Brioche Bun /With a side of Frites",
+          "tags": []
+        },
+        {
+          "name": "The Chick Club",
+          "description": "Mary's Organic Chicken / Bacon / Aged White Cheddar / Smokey Red Pepper Ranch / Roma Tomatoes / Shredded Lettuce / French Roll With a side of Frites",
+          "tags": []
+        },
+        {
+          "name": "Summer Belly",
+          "description": "Thick Cut Smoked Pork Belly/ Roma Tomatoes/ Shredded Lettuce Pickled Red Onions/ Red Ranch/ Pretzel Roll/ Served With House Chips",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "name": "Lunch — Something Sweet",
+      "items": [
+        {
+          "name": "Brown Butter Blondie",
+          "description": "Topped With Apple Compote/Cream Cheese/ Caramel",
+          "tags": []
+        },
+        {
+          "name": "Chai Panna Cotta",
+          "description": "Chai Infused Panna Cotta/ Spiced Pepita Crunch/ Caramel",
+          "tags": []
+        },
+        {
+          "name": "The Great Pumpkin",
+          "description": "Pumpkin Cake/ Pumpkin Cream Cheese/Spiced Mousse/Pecan Streusel/Shortbread Cookie",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "name": "Dinner — Starter Plates",
+      "items": [
+        {
+          "name": "A.O.C",
+          "description": "House smoked Almonds / Mixed Olives / Quicos Toasted Corn",
+          "tags": [
+            "CONTAINS PITS"
+          ]
+        },
+        {
+          "name": "Charcuterie",
+          "description": "An Elegant Assortment Of Artisanal Cheeses & Premium Cured Meats, Paired With Fig Jam, Yuzu Marmalade, Marinated Olives, Smoked Almonds, Fresh Fruits, And Baguette.",
+          "tags": [
+            "CONTAINS PITS"
+          ]
+        },
+        {
+          "name": "Brussels Sprouts",
+          "description": "Burrata Cheese / House Dressing / Aged Balsamic",
+          "tags": []
+        },
+        {
+          "name": "Cauliflower Ceviche",
+          "description": "Roasted cauliflower / Persian cucumbers / Aji Amarillo Chilies Avocado / Cilantro / Lime / Side Of Tortilla Chips",
+          "tags": [
+            "GF",
+            "VEGAN"
+          ]
+        },
+        {
+          "name": "Meatballs",
+          "description": "House Made Meatballs Made with Beef & Pork / Marinara Sauce Parmesan Cheese/ Garlic Bread",
+          "tags": []
+        },
+        {
+          "name": "Mason Jar",
+          "description": "A Deconstructed Pizza) Marinated Cherry Tomatoes, Creamy Burrata, Basil oil And Black Hawaiian Salt. Served With Wood Fired Flatbread — A Fresh, Rustic Twist On Classic Pizza Flavors.",
+          "tags": []
+        },
+        {
+          "name": "Soup",
+          "description": "Soup of the day",
+          "tags": []
+        },
+        {
+          "name": "Red Curry Shrimp",
+          "description": "Coconut Red Curry/ Butternut Squash Spatzle / Fresno Chilies Micro Cilantro",
+          "tags": []
+        },
+        {
+          "name": "Frites",
+          "description": "Thick Cut Frites / Truffle Salt/ Side Of Garlic Aioli & Ketchup",
+          "tags": []
+        },
+        {
+          "name": "Cheese Plate",
+          "description": "A Curated Selection Of Two Premium Cheeses Chosen By Our Chef, Accompanied By Fig Jam, Smoked Almonds, And Baguette",
+          "tags": []
+        },
+        {
+          "name": "Buffalo Cauliflower",
+          "description": "Fried Cauliflower/ Buffalo Sauce/ Blue Cheese Dressing",
+          "tags": []
+        },
+        {
+          "name": "Bang Bang Broccolini",
+          "description": "Sweet Chili/ Sesame Seeds/ Pickled Fresnos",
+          "tags": []
+        },
+        {
+          "name": "Lemon Parm Broccolini",
+          "description": "Grilled And Dressed With Lemon Parm, And Fresh Shaved Parmesan",
+          "tags": []
+        },
+        {
+          "name": "The French-O-Tartine",
+          "description": "Creme Bakery Sourdough / Fontina Cheese/ Chives / Caramelized Onions / Beef Stock / Cognac",
+          "tags": []
+        },
+        {
+          "name": "Spinach & Artichoke Dip",
+          "description": "Trio Of Cheeses/ Sweetie Drop Peppers/ Wood Fired Flat Bread",
+          "tags": []
+        },
+        {
+          "name": "Bread & Butter",
+          "description": "House Loaf / Fig & Calabrian Chili Whipped Butter",
+          "tags": []
+        },
+        {
+          "name": "Mussels",
+          "description": "1LB Of Mussels / Sauce / Creamy Tomato & Herb Sauce Garlic Bread",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "name": "Dinner — Salads",
+      "items": [
+        {
+          "name": "Union Salad",
+          "description": "Romane/ Arugula / Shaved Shallots / Carrots / Radishes / Fried Quinoa/ Creamy House Vinaigrette",
+          "tags": []
+        },
+        {
+          "name": "The Wedge",
+          "description": "Mini Iceberg Lettuce / Pickled Cherry Tomatoes / Smoked Bacon Blue Cheese Crumbles / Potato Crisps / Blue Cheese Dressing",
+          "tags": []
+        },
+        {
+          "name": "Caesar",
+          "description": "Little Gems /Fresh Parmesan / Caesar Dressing / Croutons",
+          "tags": []
+        },
+        {
+          "name": "Arugula Salad",
+          "description": "Crispy parmesan chips / fresh grated grana Padano / lemon vinaigrette",
+          "tags": []
+        },
+        {
+          "name": "Pear Salad",
+          "description": "Arugula/ Poached Pears/ Feta Cheese/ Spiced Pepitas/ Cranberry Vinaigrette",
+          "tags": []
+        },
+        {
+          "name": "Niçoise",
+          "description": "Romane / Roasted Potatoes/ Shallots / Green Beans/ Confit Cherry Tomatoes / Olives / Champagne Vinaigrette",
+          "tags": [
+            "VEGAN"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dinner — Pasta",
+      "items": [
+        {
+          "name": "Short Rib Ragu & Carrot Mafalda",
+          "description": "Prime Short Rib / San Marzano Tomatoes/ Pecorino Cheese",
+          "tags": []
+        },
+        {
+          "name": "Home Style Mac N' Cheese",
+          "description": "Gallo Pasta/ Tillamook Four Cheese Sauce/ Cheddar Crack",
+          "tags": []
+        },
+        {
+          "name": "Coastal Cream Pasta",
+          "description": "Spaghetti/ Lemon Cream Sauce/ Blue Crab Meat/ Chives/ Masago",
+          "tags": []
+        },
+        {
+          "name": "The Spicy Sausage",
+          "description": "Strozzapreti / Fennel Sausage / Broccolini / Whipped Ricotta Sauce/ Pickled Fresno Chiles",
+          "tags": []
+        },
+        {
+          "name": "Pesto Pasta",
+          "description": "Spaghetti / Creamy Pesto/ Basil/ Grated Parmesan/ Drizzled Lemon Oil *Contains Nuts",
+          "tags": [
+            "CONTAINS NUTS"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dinner — Wood Fired Pizza",
+      "items": [
+        {
+          "name": "Bianca",
+          "description": "Cream / Mozzarella / Fontina Cheese / Black Truffle Cheese Thyme",
+          "tags": []
+        },
+        {
+          "name": "Margherita",
+          "description": "Tomato Sauce / Mozzarella / Basil / Extra Virgin Olive Oil",
+          "tags": []
+        },
+        {
+          "name": "Pepperoni & Pickled Pepper",
+          "description": "Tomato Sauce / Pickled Peppers / Mozzarella / Garlic",
+          "tags": []
+        },
+        {
+          "name": "Prosciutto & Fig",
+          "description": "Cream Sauce/ Fontina Cheese/ Fig/ Prosciutto/ Arugula/Balsamic Glaze",
+          "tags": []
+        },
+        {
+          "name": "Supremo",
+          "description": "Red Sauce / Mozzarella / Pepperoni / Sausage / Red Onion / Bell Peppers / Olives",
+          "tags": []
+        },
+        {
+          "name": "Union",
+          "description": "Tomato Sauce / Prosciutto / Burrata / Fresh Arugula / Parmesan Cheese",
+          "tags": []
+        },
+        {
+          "name": "Forest Floor",
+          "description": "Trio Of Mushrooms: Hen Of The Woods, Cremini, Beech Mozzarella/ Fontina Cheese/ Black Truffle Cheese",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "name": "Dinner — Big Plates",
+      "items": [
+        {
+          "name": "Jammin' Burger & Frites",
+          "description": "6oz Wagyu Beef Fatty / Fontina Cheese / Bacon Onion Jam Crispy Onion / Smoked Aioli / Brioche Bun With Side Of Frites",
+          "tags": []
+        },
+        {
+          "name": "The Standard Burger",
+          "description": "6oz All American Beed Patty/ Shredded Lettuce/ Tomatoes/ Onions/ Pickles/ American Cheese/ Thousand Island Dressing/ Brioche Bun/ Side Of Fries",
+          "tags": []
+        },
+        {
+          "name": "8oz Petite Filet",
+          "description": "Bordelaise Sauce/ Baba Ghanoush/ Grilled Carrots",
+          "tags": []
+        },
+        {
+          "name": "Steak Au Poivre",
+          "description": "8oz Prime Flat Iron Steak/Au Poivre Sauce/ And Frites",
+          "tags": []
+        },
+        {
+          "name": "24oz Prime Ribeye",
+          "description": "Chimichurri/ Steakhouse Cream Spinach",
+          "tags": []
+        },
+        {
+          "name": "Pan Roasted Chicken",
+          "description": "8oz Mary's Organic Chicken Breast / Mashed Potatoes/ Gravy Broccolini",
+          "tags": [
+            "GF"
+          ]
+        },
+        {
+          "name": "The O'G Fried Chicken",
+          "description": "Whole Free-Range Chicken / Rosemary & Lemon/ Mashed Potatoes (Half Chicken / Whole Chicken)",
+          "tags": [
+            "GF"
+          ]
+        },
+        {
+          "name": "Pork Loin",
+          "description": "Niman Ranch Glazed With Hot Honey/ Mashed Potatoes/ Roasted Cabbage",
+          "tags": []
+        },
+        {
+          "name": "Roasted Salmon",
+          "description": "Risotto Cake / White Wine Cream Sauce/ Spinach Wild Mushrooms",
+          "tags": [
+            "GF"
+          ]
+        },
+        {
+          "name": "Yellow Curry",
+          "description": "Smoked \"Tandoori\" Tofu / Garbanzo Beans/ Carrots/ Yellow Coconut Curry / Wild Rice / Red Fresno Chilies/ Cilantro",
+          "tags": [
+            "GF",
+            "VEGAN"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dinner — Desserts",
+      "items": [
+        {
+          "name": "Bananas Foster",
+          "description": "Old town bakery sourdough bread pudding / banana rum caramel / Bert & Rocky's vanilla ice cream / fresh bananas",
+          "tags": []
+        },
+        {
+          "name": "The Great Pumpkin",
+          "description": "Pumpkin Cake/ Pumpkin Cream Cheese/ Spiced Mousse/ Pecan Streusel/ Shortbread Cookie",
+          "tags": []
+        },
+        {
+          "name": "Brown Butter Blondie",
+          "description": "Topped With Apple Compote, Cream Cheese, Caramel (Gluten Free)",
+          "tags": [
+            "GLUTEN FREE"
+          ]
+        },
+        {
+          "name": "Chai Panna Cotta",
+          "description": "Chai Infused Panna Cotta/ Spiced Pepita Crunch/ Caramel",
+          "tags": []
+        },
+        {
+          "name": "Jones Roasters Coffee",
+          "description": "Mediterranean Blend or Decaf",
+          "tags": []
+        }
+      ]
+    }
+  ]
+}

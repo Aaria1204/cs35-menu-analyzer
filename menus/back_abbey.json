@@ -1,0 +1,81 @@
+{
+  "restaurant_name": "The Back Abbey",
+  "cuisine": "american",
+  "location": "128 North Oberlin Ave., Claremont, CA 91711",
+  "sections": [
+    {
+      "name": "Appetizers",
+      "items": [
+        {"name": "Olive and Almonds", "description": "BUTTERY-SWEET CASTELEVETRANO OLIVES & SMOKED BLUE DIAMOND ALMONDS *Contains pits", "tags": ["CONTAINS PITS"]},
+        {"name": "Charcuterie Board", "description": "CHEF'S DAILY SELECECTION OF 3 CURED MEATS & 3 ARTISAN CHEESES ACCOUTEMENTS AND FRESH BAKED BREAD. JUST CHEESE OR MEAT ALSO AVAILABLE!", "tags": []},
+        {"name": "Fhun Diip", "description": "CHEF CURATED DIP THAT CHANGES MONTHLY", "tags": []},
+        {"name": "Crab Cakes", "description": "Lump crab meat, mixed with panko, eggs, toasted chilies & herbs. Panko crusted and fried. Served with lemons & our picante dill pickle aioli", "tags": []},
+        {"name": "Soft Bavarian Pretzel", "description": "SERVED WARM WITH OUR SIGNATURE AUGUSTIJN ALE AIOLI BREWED BY BROUWERIJ VAN STEENBERGE IN BELGIUM", "tags": []},
+        {"name": "Belgian Mussels", "description": "1 POUND STEAMED IN WHITE WINE, AROMATICS HERBS, & CREAM. SERVED WITH BUTTERED & GRILLED BAGUETTE", "tags": []}
+      ]
+    },
+    {
+      "name": "Salads",
+      "items": [
+        {"name": "Steak Salad", "description": "Grilled beef tenderloin, organic mixed greens, peppadew peppers, shaved red onions, feta cheese. Dressed in our sun dried tomato vinaigrette", "tags": []},
+        {"name": "Pub Salad", "description": "Mixed organic greens dressed in our champagne vinaigrette and topped with our brioche croûtons. *Add chicken $6", "tags": []},
+        {"name": "Chicken Chip Chop Salad", "description": "Brined & grilled chicken breast, little gems & mixed greens, dressed in our Champagne vinaigrette. Topped with blistered cherry tomatoes, marinated green beans, hard boiled eggs, and morning made d'Espelette salted potato chips", "tags": []},
+        {"name": "Caeser Salad", "description": "Hearts of romaine tossed in our housemade Caesar dressing, and topped with Parmesan Cheese, and croutons. Add Grilled Salmon $12 or Grilled Chicken $6", "tags": []}
+      ]
+    },
+    {
+      "name": "Soup of The Day",
+      "items": [
+        {"name": "Soup of The Day", "description": "Housemade soup, crafted every two days and served with crusty bread & butter. Ask your server for today's selection", "tags": []}
+      ]
+    },
+    {
+      "name": "Pommes Frites",
+      "items": [
+        {"name": "Pommes Frites", "description": "Fresh cut Kennebec potatoes double fried with duck fat. Served with Heinz ketchup and our signature sauces, Horseradish Chive & Remoulade Ranch.", "tags": []}
+      ]
+    },
+    {
+      "name": "Soup and Pub Salad",
+      "items": [
+        {"name": "Soup and Pub Salad", "description": "Bowl of today's soup selection, served with our Pub salad and fresh baked bread & butter", "tags": []}
+      ]
+    },
+    {
+      "name": "Burgers",
+      "items": [
+        {"name": "The Back Abbey", "description": "Aged gouda, mustard aioli, caramelized onions, Niman Ranch Bacon & micro greens", "tags": []},
+        {"name": "Backyard Burger", "description": "SHREDDED ICEBURG LETTUCE, RED REMY SAUCE, RED ONIONS, ROMA TOMATOES, DILL PICKLES & AGED WHITE CHEDDAR. ADD BACON $2", "tags": []},
+        {"name": "The Lamb Burger", "description": "Ground Lamb, Arugula, Gouda Cheese, Pickled Red Onion, D'Espelette Aioli", "tags": []},
+        {"name": "Chicken Club", "description": "Grilled chicken breast, aged cheddar, tomatoes, pickled red onion, shredded lettuce, Niman Ranch Bacon, D'espelette aioli on Ciabatta Bread", "tags": []},
+        {"name": "Turkey Burger", "description": "Turkey Patty, Fig Jam, Feta Cheese, Frisee Lettuce", "tags": []},
+        {"name": "The Red Monk Burger", "description": "Cranberry Apple Chutney, Feta Cheese, Cranberry Mustard Aioli, Arugula", "tags": []}
+      ]
+    },
+    {
+      "name": "Sandwiches",
+      "items": [
+        {"name": "The Tenderloin", "description": "Grilled beef tenderloin, caramelized onions & St. Agur Crème Fraiche, served on a toasted French Roll", "tags": []},
+        {"name": "Biergarten Brat", "description": "Grilled Agrodolce peppers, caramelized onions, on a toasted French roll. Served with a side of our spicy apple mustard.", "tags": []},
+        {"name": "Spicy Chicken Schnitzel", "description": "Panko breaded, d'Espelette aioli, shredded iceberg lettuce & pickled Fresno chilies, served on a Brioche Bun *Also available as grilled chicken", "tags": []},
+        {"name": "The Grilled Garden", "description": "Grilled portobello mushrooms, eggplant, zucchini, feta cheese, agrodolce peppers & herb aioli, served on a Brioche bun *Vegan option is served on a toasted French roll without feta", "tags": ["VEGAN OPTION"]},
+        {"name": "The BLT", "description": "THICK CUT SMOKED PORK BELLY, TOMATOES, SHREDDED LETTUCE, PICKLED RED ONION, & GREEN REMEY. SERVED ON A PRETZEL ROLL AND A SIDE OF OUR D'ESPELETTE POTATO CHIPS. * ADD AVOCADO $3", "tags": []}
+      ]
+    },
+    {
+      "name": "Entrees",
+      "items": [
+        {"name": "Schnitzel", "description": "Breaded, pounded & fried pork loin, German style potato and bacon salad, Frisee lettuce, with caramelized onion vinaigrette", "tags": []},
+        {"name": "Bavik Battered Fish", "description": "Ling cod dipped in our Bavik beer battered. served along side frites and a small mixed salad dressed with our house dressing", "tags": []},
+        {"name": "Steak & Frites", "description": "8 ounce prime flat iron steak topped with Maitre D' butter. Accompanied by pomme frites & an arugula salad with our caramelized onion vinaigrette", "tags": []}
+      ]
+    },
+    {
+      "name": "Dessert",
+      "items": [
+        {"name": "French Beignets", "description": "Belgian chocolate fudge with berries & Confectioners' sugar", "tags": []},
+        {"name": "Bavarian Dream Cake Cup", "description": "Chocolate cake, Bavarian Cream, Caramel, Chocolate", "tags": []}
+      ]
+    }
+  ]
+}

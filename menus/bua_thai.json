@@ -1,0 +1,161 @@
+{
+  "restaurant_name": "Bua Thai Cuisine",
+  "cuisine": "asian",
+  "location": "450 W 1st St, Claremont, CA 91711",
+  "sections": [
+    {
+      "name": "Appetizers",
+      "items": [
+        {"name": "Thai Spring Rolls", "description": "Deep-fried spring rolls, stuffed with ground chicken, glass noodles carrot, and cabbage.", "tags": []},
+        {"name": "Fresh Rolls", "description": "Tofu, glass noodles and green vegetables wrapped in tapioca sheet.", "tags": []},
+        {"name": "Garden Rolls", "description": "Deep-fried spring rolls, stuffed with carrot cabbage and glass noodles.", "tags": []},
+        {"name": "Stuffed Chicken Wings", "description": "Boneless chicken wings stuffed with ground chicken glass noodles and mushroom.", "tags": []},
+        {"name": "Shrimp Rolls", "description": "Deep-fried shrimp wrapped in spring roll skin.", "tags": []},
+        {"name": "Sate", "description": "Chicken or beef. Grilled marinated meat on skewers.", "tags": []},
+        {"name": "Fried Tofu", "description": "", "tags": []},
+        {"name": "Fried Chicken Wonton", "description": "", "tags": []},
+        {"name": "Tod Mun Pla (Thai Spiced Fish Cake)", "description": "Thai style fish cake ( mixed with Thai spice & herbs )", "tags": []},
+        {"name": "Shrimp Sticks", "description": "Shrimp and bacon-wrapped with egg noodles.", "tags": []},
+        {"name": "Bua Thong", "description": "Deep-fried mixed crab meat and cream cheese in a wonton wrapper.", "tags": []},
+        {"name": "Thai Toast", "description": "Deep-fried toast with ground chicken.", "tags": []},
+        {"name": "Stuffed Mushrooms", "description": "Mushrooms stuffed with crab meat, shrimp, topped with a special peanut sauce.", "tags": []},
+        {"name": "Palette of Appetizers", "description": "Combination of bua thong, shrimp rolls, fried wontons, shrimp sticks and garden rolls.", "tags": []},
+        {"name": "Golden Fried Shrimp", "description": "Deep-fried, battered shrimp and vegetables.", "tags": []}
+      ]
+    },
+    {
+      "name": "Soups",
+      "items": [
+        {"name": "Wonton Soup", "description": "Served with shrimp, chicken filled wonton and vegetables.", "tags": []},
+        {"name": "Combination Soup", "description": "Mixed vegetables with chicken, pork and shrimp in light broth.", "tags": []},
+        {"name": "Tofu Vegetable Soup", "description": "Tofu and mixed vegetables in light broth.", "tags": []}
+      ]
+    },
+    {
+      "name": "Tom Yum Soup",
+      "items": [
+        {"name": "Tom Yum Pak Soup", "description": "Mixed vegetables. Hot and sour soup with a touch of lemongrass.", "tags": []},
+        {"name": "Tom Yum Kai Soup", "description": "Chicken. Hot and sour soup with a touch of lemongrass.", "tags": []},
+        {"name": "Tom Yum Goong Soup", "description": "Shrimp. Hot and sour soup with a touch of lemongrass.", "tags": []},
+        {"name": "Tom Yum Seafood Soup", "description": "Combination of seafood. Hot and sour soup with a touch of lemongrass.", "tags": []}
+      ]
+    },
+    {
+      "name": "Tom Kar Soup",
+      "items": [
+        {"name": "Tom Kar Kai Soup", "description": "Chicken. Coconut milk soup.", "tags": []},
+        {"name": "Tom Kar Pak Soup", "description": "Mixed vegetables. Coconut milk soup.", "tags": []},
+        {"name": "Tom Kar Goong Soup", "description": "Shrimp. Coconut milk soup.", "tags": []},
+        {"name": "Tom Kar Seafood Soup", "description": "Combination of seafood. Coconut milk soup.", "tags": []}
+      ]
+    },
+    {
+      "name": "Salads",
+      "items": [
+        {"name": "House Salad", "description": "Fresh lettuce, cucumber, tomato and chicken served with house dressing.", "tags": []},
+        {"name": "Larb Salad", "description": "Minced chicken, pork or beef dressed in spicy lime juice and toasted rice powder.", "tags": []},
+        {"name": "Beef Salad", "description": "Grilled beef dressed in spicy lime juice, served over a fresh salad.", "tags": []},
+        {"name": "Grand Salad", "description": "Boded shrimp, chicken, pork and egg served with peanut dressing.", "tags": []},
+        {"name": "Apple Salad", "description": "Apple, onion, crunchy coconut, carrot, cashew nuts and shrimp in vinegar dressing.", "tags": []},
+        {"name": "Papaya Salad", "description": "Green papaya, tomato, green beans and dressed with spicy lime juice.", "tags": []},
+        {"name": "Eggplant Salad", "description": "Grilled eggplant, minced chicken and shrimp dressed with spicy lime juice.", "tags": []},
+        {"name": "Silver Noodle Salad", "description": "Glass noodles, minced chicken and shrimp dressed with spicy lime juice.", "tags": []},
+        {"name": "Shrimp Salad", "description": "Grilled shrimp dressed in spicy lime juice, served over a fresh salad.", "tags": []},
+        {"name": "Duck Salad", "description": "Sliced duck dressed in spicy lime juice.", "tags": []}
+      ]
+    },
+    {
+      "name": "Noodles",
+      "items": [
+        {"name": "Phad See- Ew Noodles", "description": "Flat rice noodles stir-fried with egg, broccoli & carrot.", "tags": []},
+        {"name": "Phad Thai Noodles", "description": "Thai noodle stir-fried with egg, tofu, onion, bean sprout and peanut.", "tags": []},
+        {"name": "Chow Mein", "description": "Egg noodles stir-fried with mixed vegetables.", "tags": []},
+        {"name": "Phad Kee Mao", "description": "Fried noodles stir-fried with broccoli, fresh chili, onion and basil.", "tags": []},
+        {"name": "Chicken Noodles", "description": "Fried noodles stir-fried with chicken and egg over fresh lettuce.", "tags": []},
+        {"name": "Bua Noodles", "description": "Egg noodles stir-fried with egg, fresh chili, onion, broccoli and basil.", "tags": []},
+        {"name": "Crispy Noodles", "description": "Deep-fried egg noodles topped with broccoli and carrot in gravy.", "tags": []},
+        {"name": "Rad Na Noodles", "description": "Flat rice noodles topped with broccoli and carrot, in gravy.", "tags": []},
+        {"name": "Phad Woon Sen", "description": "Glass noodle stir-fried with egg, carrot, onion and tomato.", "tags": []},
+        {"name": "Rad Na Seafood", "description": "Flat rice noodles, a combination of seafood topped with broccoli and carrot, in gravy.", "tags": []}
+      ]
+    },
+    {
+      "name": "Fried Rice",
+      "items": [
+        {"name": "Drunken Fried Rice", "description": "Served with egg, Thai spice, fresh chili, onion, bell pepper and basil.", "tags": []},
+        {"name": "Bua Thai Fried Rice", "description": "Served with egg, peas, carrot.", "tags": []},
+        {"name": "Pineapple Fried Rice", "description": "It comes with an egg. chicken. pork. shrimp. sliced pineapple. peas, carrots. cashew nuts with curry powder served in a pineapple shell.", "tags": []}
+      ]
+    },
+    {
+      "name": "Curries (does not included rice)",
+      "items": [
+        {"name": "Yellow Curry", "description": "Served with potato and carrot.", "tags": []},
+        {"name": "Panang Curry", "description": "Severed with bell pepper.", "tags": []},
+        {"name": "Green Curry", "description": "Served with eggplant, bamboo shoots, peas and carrot.", "tags": []},
+        {"name": "Red Curry", "description": "Served with bamboo shoots, peas and carrot.", "tags": []}
+      ]
+    },
+    {
+      "name": "Stir-Fried (does not included rice)",
+      "items": [
+        {"name": "Chili Pepper and Basil Leaves", "description": "", "tags": []},
+        {"name": "Bean Sprout", "description": "Served with onion and tofu.", "tags": []},
+        {"name": "Broccoli and Mushroom", "description": "In oyster sauce.", "tags": []},
+        {"name": "Cashew Nut and Dried Chili", "description": "", "tags": []},
+        {"name": "Eggplant", "description": "In soybean paste, chili and basil leaves.", "tags": []},
+        {"name": "Garlic and Black Pepper", "description": "", "tags": []},
+        {"name": "Ginger", "description": "Served with onion and mushroom.", "tags": []},
+        {"name": "Mixed Vegetables", "description": "In oyster sauce.", "tags": []},
+        {"name": "Prik King", "description": "Green bean in chili paste.", "tags": []},
+        {"name": "Sweet & Sour", "description": "Served with cucumber, onion, tomato, bell pepper, carrot and pineapple.", "tags": []}
+      ]
+    },
+    {
+      "name": "Specialties (does not included rice)",
+      "items": [
+        {"name": "Garlic Short Ribs", "description": "Black peppers & garlic.", "tags": []},
+        {"name": "Tofu Delight", "description": "Deep-fried topped with mixed vegetables in gravy.", "tags": []},
+        {"name": "Crispy Duck", "description": "Quarter leg, fried and glazed with orange sauce.", "tags": []},
+        {"name": "Thai BBQ Chicken", "description": "House special half chicken.", "tags": []},
+        {"name": "Thai BBQ Pork Spare Ribs", "description": "", "tags": []},
+        {"name": "Bua Pork Chop", "description": "Homemade style.", "tags": []},
+        {"name": "Honey Duck", "description": "Boneless duck's breast served with home- made sauce.", "tags": []},
+        {"name": "Teriyaki Salmon", "description": "Grilled in Thai style teriyaki sauce.", "tags": []},
+        {"name": "Salmon Rad Prik", "description": "Deep-fried, topped with spicy herb sauce.", "tags": []},
+        {"name": "Pepper Soft Shell Crab", "description": "Battered and deep-fried, topped with bell pepper, onion in black peppers and garlic sauce.", "tags": []},
+        {"name": "South Sea", "description": "A combination of seafood, stir-fried in a spicy herb sauce.", "tags": []}
+      ]
+    },
+    {
+      "name": "Extras",
+      "items": [
+        {"name": "Steamed Rice White or Brown", "description": "Priced by add-ons", "tags": []},
+        {"name": "Cucumber Salad", "description": "", "tags": []},
+        {"name": "Peanut Sauce", "description": "", "tags": []},
+        {"name": "Steamed Sticky Rice", "description": "", "tags": []},
+        {"name": "House Sauce or Salad Dressing", "description": "", "tags": []}
+      ]
+    },
+    {
+      "name": "Beverages",
+      "items": [
+        {"name": "Coke", "description": "", "tags": []},
+        {"name": "Diet Coke", "description": "", "tags": []},
+        {"name": "Sprite", "description": "", "tags": []},
+        {"name": "Thai Iced Tea", "description": "", "tags": []},
+        {"name": "Unsweetened Iced Tea", "description": "", "tags": []},
+        {"name": "Bottled Water", "description": "", "tags": []},
+        {"name": "Mineral Water", "description": "Perrier.", "tags": []},
+        {"name": "Raspberry Iced Tea", "description": "", "tags": []}
+      ]
+    },
+    {
+      "name": "Desserts",
+      "items": [
+        {"name": "Sweet Sticky Rice With Mango", "description": "", "tags": []},
+        {"name": "Bua Ice Cream", "description": "", "tags": []}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+.env
+.env.*
+*.pyc
+__pycache__/
+.streamlit/secrets.toml
+llm_cache.json
+spoonacular_baseline_results.json
+.DS_Store
+.venv/
+venv/
+*.egg-info/
+.ipynb_checkpoints/
+menus_raw/
