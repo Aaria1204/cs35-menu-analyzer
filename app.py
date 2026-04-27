@@ -32,7 +32,10 @@ DIET_BUNDLES: Dict[str, List[str]] = {
     "Vegan":        ["meat", "fish", "shellfish", "dairy", "eggs"],
 }
 
-DOT = {"safe": "🟢", "uncertain": "🟡", "unsafe": "🔴"}
+# Hex palette — also used by the .dot-* CSS rules below.
+COLOR_SAFE = "#2E7D32"        # forest green
+COLOR_UNCERTAIN = "#F9A825"   # amber
+COLOR_UNSAFE = "#C62828"      # deep red
 
 
 # ---------------------------------------------------------------------------
@@ -191,16 +194,97 @@ def get_classified(menu_filename: str, restrictions: List[str], strict_mode: boo
     return st.session_state.cache[key]
 
 
-def dot_for(verdict: str, strict_mode: bool) -> str:
+def verdict_class(verdict: str, strict_mode: bool) -> str:
+    """CSS class suffix for the colored dot. Strict mode collapses uncertain to unsafe."""
     if strict_mode and verdict == "uncertain":
-        return DOT["unsafe"]
-    return DOT.get(verdict, "⚪")
+        return "unsafe"
+    return verdict
+
+
+def score_to_color(score_pct: float) -> str:
+    """Bucket score into the same 3 colors used elsewhere in the UI."""
+    if score_pct >= 70:
+        return COLOR_SAFE
+    if score_pct >= 40:
+        return COLOR_UNCERTAIN
+    return COLOR_UNSAFE
+
+
+def score_to_size(score_pct: float) -> float:
+    """Pin radius in meters. Higher score = larger pin. Range ~150–700m."""
+    return 150 + (score_pct / 100.0) * 550
 
 
 # ---------------------------------------------------------------------------
 # Streamlit app
 # ---------------------------------------------------------------------------
 st.set_page_config(page_title="Menu Analyzer", page_icon="🍽️", layout="wide")
+
+# ---- Custom CSS ----
+st.markdown("""
+<style>
+/* Hide Streamlit chrome */
+#MainMenu, [data-testid="stMainMenu"] {visibility: hidden;}
+footer {visibility: hidden;}
+[data-testid="stStatusWidget"] {visibility: hidden;}
+
+/* Tighter container padding (≈30% reduction) */
+.block-container {
+    padding-top: 2.2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1200px;
+}
+
+/* Color dots */
+.dot {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.dot-safe      { background: #2E7D32; }
+.dot-uncertain { background: #F9A825; }
+.dot-unsafe    { background: #C62828; }
+
+/* Dish row layout */
+.dish-row { margin: 0 0 6px 0; line-height: 1.3; }
+.dish-name {
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #1A1A1A;
+    vertical-align: middle;
+}
+.dish-desc {
+    color: #5A6470;
+    font-size: 0.9rem;
+    margin: 2px 0 8px 24px;
+}
+
+/* Tighter section headers in the menu */
+h3 { margin-top: 1.4rem !important; margin-bottom: 0.6rem !important; }
+
+/* Card-style ranking table */
+[data-testid="stDataFrame"] {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Why? rows inside the expander */
+.reason-row { margin: 4px 0; line-height: 1.35; }
+.reason-row .dot { width: 10px; height: 10px; margin-right: 6px; }
+.reason-evidence {
+    color: #5A6470;
+    font-size: 0.82rem;
+    margin: 0 0 4px 22px;
+}
+</style>
+""", unsafe_allow_html=True)
 
 st.title("🍽️ Menu Analyzer")
 st.caption("Restaurant menu screening for dietary restrictions.")
@@ -248,6 +332,32 @@ ranking_df = (
     .reset_index(drop=True)
 )
 
+# ---- Map: where they are ----
+st.subheader("Where they are")
+st.caption("Pin size and color reflect friendliness score for your selected restrictions.")
+
+map_rows = []
+for fname in menu_files:
+    raw = load_menu(fname)
+    lat = raw.get("latitude")
+    lng = raw.get("longitude")
+    if lat is None or lng is None:
+        continue
+    s = compute_friendliness(classified_by_file[fname], strict_mode)
+    map_rows.append({
+        "lat": float(lat),
+        "lon": float(lng),
+        "size": score_to_size(s["score_pct"]),
+        "color": score_to_color(s["score_pct"]),
+        "Restaurant": raw.get("restaurant_name") or fname,
+    })
+
+if map_rows:
+    map_df = pd.DataFrame(map_rows)
+    st.map(map_df, latitude="lat", longitude="lon", size="size", color="color")
+else:
+    st.info("No restaurants have latitude/longitude set yet — add them to the menu JSONs to see the map.")
+
 # ---- Restaurant picker (above the table per spec) ----
 restaurant_choice = st.selectbox(
     "Select a restaurant to view its menu",
@@ -259,7 +369,7 @@ restaurant_choice = st.selectbox(
 st.subheader("Friendliness ranking")
 if not restrictions:
     st.info("No restrictions selected — every dish defaults to safe. Pick allergens or a diet to see differentiation.")
-st.dataframe(ranking_df.drop(columns=["_file"]), use_container_width=True, hide_index=True)
+st.dataframe(ranking_df.drop(columns=["_file"]), width="stretch", hide_index=True)
 
 # ---- Selected menu ----
 selected = classified_by_file[restaurant_choice]
@@ -275,19 +385,40 @@ for section in selected["sections"]:
     st.markdown(f"### {section['name']}")
     for item in section["items"]:
         verdict = item["combined_verdict"]
-        d = dot_for(verdict, strict_mode)
-        st.markdown(f"{d} &nbsp; **{item['name']}**", unsafe_allow_html=True)
-        if item["description"]:
-            st.caption(item["description"])
+        cls = verdict_class(verdict, strict_mode)
+        # Escape the dish name so quotes / angle brackets don't break the markup.
+        name_html = (item["name"] or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        desc_html = (item.get("description") or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        body = (
+            f'<div class="dish-row">'
+            f'<span class="dot dot-{cls}"></span>'
+            f'<span class="dish-name">{name_html}</span>'
+            f'</div>'
+        )
+        if desc_html:
+            body += f'<div class="dish-desc">{desc_html}</div>'
+        st.markdown(body, unsafe_allow_html=True)
+
         if item["per_restriction"]:
             with st.expander("why?", expanded=False):
                 for r, pr in item["per_restriction"].items():
                     pv = pr["verdict"]
-                    pd_dot = dot_for(pv, strict_mode)
-                    st.markdown(f"- {pd_dot} **{r}** ({pv}): {pr.get('reason', '')}")
+                    pcls = verdict_class(pv, strict_mode)
+                    reason = (pr.get("reason") or "").replace("<", "&lt;").replace(">", "&gt;")
+                    st.markdown(
+                        f'<div class="reason-row">'
+                        f'<span class="dot dot-{pcls}"></span>'
+                        f'<b>{r}</b> ({pv}): {reason}'
+                        f'</div>',
+                        unsafe_allow_html=True,
+                    )
                     ev = pr.get("evidence") or []
                     if ev:
-                        st.caption(f"evidence: {', '.join(ev)}")
+                        ev_html = ", ".join(e.replace("<", "&lt;").replace(">", "&gt;") for e in ev)
+                        st.markdown(
+                            f'<div class="reason-evidence">evidence: {ev_html}</div>',
+                            unsafe_allow_html=True,
+                        )
 
 # ---- About ----
 with st.expander("About this demo"):

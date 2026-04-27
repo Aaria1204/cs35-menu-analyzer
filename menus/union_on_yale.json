@@ -2,6 +2,8 @@
   "restaurant_name": "Union On Yale",
   "cuisine": "american",
   "location": "232 Yale Ave. Claremont, CA, 91711",
+  "latitude": 34.093577,
+  "longitude": -117.738608,
   "sections": [
     {
       "name": "Lunch — Salads",

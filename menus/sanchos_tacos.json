@@ -2,84 +2,244 @@
   "restaurant_name": "Sancho's Tacos",
   "cuisine": "mexican",
   "location": null,
+  "latitude": 34.112387,
+  "longitude": -117.736322,
   "sections": [
     {
       "name": "Tacos",
       "items": [
-        {"name": "OG", "description": "Choice Tri-Tip, Fresh Onions & Cilantro, Sour Cream, Chubbie Sauce", "tags": []},
-        {"name": "Federale", "description": "Slow Roasted Carnitas, Fresh Onions & Cilantro, Sour Cream, Chubbie Sauce", "tags": []},
-        {"name": "Yard Bird", "description": "Fresh Grilled Chicken Breast, Fresh Onions & Cilantro, Sour Cream, Chubbie Sauce", "tags": []},
-        {"name": "Flounder Pounder", "description": "Grilled Marinated Fish, Cabbage & Cilantro, Sour Cream, Salsa Verde, Chubbie Sauce", "tags": []},
-        {"name": "Flaco Taco", "description": "Grilled to order Artichoke Hearts, Mushrooms & Spinach, Fresh Avo & Salsa Verde", "tags": []},
-        {"name": "Skrimps", "description": "Grilled to Order Shrimp, Sauteed in Real Butter with Fresh Garlic and Parsley, Fresh Cabbage, Sour Cream, Pico De Gallo, Chipotle Sauce", "tags": []},
-        {"name": "Surf & Turf", "description": "Angus Tri Tip, Sautéed Shrimp, Sour Cream, Cabagge, Pico De Gallo, Chipotle Sauce", "tags": []},
-        {"name": "Skrimp's Carnal", "description": "Hand Dipped, Beer Battered shrimp on a Flour Tortilla topped with Cabbage, Pico, Chipotle and Sour Cream", "tags": []},
-        {"name": "Pounder's Carnal", "description": "Hand Dipped, Beer Battered fish on a Flour Tortilla topped with Cabbage, Pico, Chipotle and Sour Cream", "tags": []},
-        {"name": "Fresh Feria", "description": "Replaces Tortilla Shell with an Organic Butter Leaf, Lettuce Cup", "tags": []}
+        {
+          "name": "OG",
+          "description": "Choice Tri-Tip, Fresh Onions & Cilantro, Sour Cream, Chubbie Sauce",
+          "tags": []
+        },
+        {
+          "name": "Federale",
+          "description": "Slow Roasted Carnitas, Fresh Onions & Cilantro, Sour Cream, Chubbie Sauce",
+          "tags": []
+        },
+        {
+          "name": "Yard Bird",
+          "description": "Fresh Grilled Chicken Breast, Fresh Onions & Cilantro, Sour Cream, Chubbie Sauce",
+          "tags": []
+        },
+        {
+          "name": "Flounder Pounder",
+          "description": "Grilled Marinated Fish, Cabbage & Cilantro, Sour Cream, Salsa Verde, Chubbie Sauce",
+          "tags": []
+        },
+        {
+          "name": "Flaco Taco",
+          "description": "Grilled to order Artichoke Hearts, Mushrooms & Spinach, Fresh Avo & Salsa Verde",
+          "tags": []
+        },
+        {
+          "name": "Skrimps",
+          "description": "Grilled to Order Shrimp, Sauteed in Real Butter with Fresh Garlic and Parsley, Fresh Cabbage, Sour Cream, Pico De Gallo, Chipotle Sauce",
+          "tags": []
+        },
+        {
+          "name": "Surf & Turf",
+          "description": "Angus Tri Tip, Sautéed Shrimp, Sour Cream, Cabagge, Pico De Gallo, Chipotle Sauce",
+          "tags": []
+        },
+        {
+          "name": "Skrimp's Carnal",
+          "description": "Hand Dipped, Beer Battered shrimp on a Flour Tortilla topped with Cabbage, Pico, Chipotle and Sour Cream",
+          "tags": []
+        },
+        {
+          "name": "Pounder's Carnal",
+          "description": "Hand Dipped, Beer Battered fish on a Flour Tortilla topped with Cabbage, Pico, Chipotle and Sour Cream",
+          "tags": []
+        },
+        {
+          "name": "Fresh Feria",
+          "description": "Replaces Tortilla Shell with an Organic Butter Leaf, Lettuce Cup",
+          "tags": []
+        }
       ]
     },
     {
       "name": "Burritos",
       "items": [
-        {"name": "Full Size Bean & Cheese", "description": "Burrito with Beans, Freshly Grated Cheddar Jack, Wrapped in a Grilled Flour Tortilla", "tags": []},
-        {"name": "Flaco Lunch Burrito", "description": "Beans, Spanish Rice, Onions & Cilantro, Sautéed Spinach, Mushrooms, Artichoke Heart and Avo in a Grilled Flour Tortilla with your choice of salsa. *Make it vegan with black beans & cilantro lime rice!", "tags": ["VEGAN OPTION"]},
-        {"name": "CaliGuey", "description": "Angus Tri Tip, Fresh Guacamole, Cheddar Jack Blend, French Fries, Sour Cream in a Char Grilled Tortilla", "tags": []},
-        {"name": "Surf & Turf", "description": "Angus Tri Tip, Sautéed Shrimp, Rice, Beans, Cheddar Jack, Sour cream, Cabbage, Pico De Gallo, Choice of Salsa on Side", "tags": []}
+        {
+          "name": "Full Size Bean & Cheese",
+          "description": "Burrito with Beans, Freshly Grated Cheddar Jack, Wrapped in a Grilled Flour Tortilla",
+          "tags": []
+        },
+        {
+          "name": "Flaco Lunch Burrito",
+          "description": "Beans, Spanish Rice, Onions & Cilantro, Sautéed Spinach, Mushrooms, Artichoke Heart and Avo in a Grilled Flour Tortilla with your choice of salsa. *Make it vegan with black beans & cilantro lime rice!",
+          "tags": [
+            "VEGAN OPTION"
+          ]
+        },
+        {
+          "name": "CaliGuey",
+          "description": "Angus Tri Tip, Fresh Guacamole, Cheddar Jack Blend, French Fries, Sour Cream in a Char Grilled Tortilla",
+          "tags": []
+        },
+        {
+          "name": "Surf & Turf",
+          "description": "Angus Tri Tip, Sautéed Shrimp, Rice, Beans, Cheddar Jack, Sour cream, Cabbage, Pico De Gallo, Choice of Salsa on Side",
+          "tags": []
+        }
       ]
     },
     {
       "name": "...And Then Some",
       "items": [
-        {"name": "Sancho's Nachos", "description": "Made to Order Chips, Beans, Fresh Onions, Melted Cheddar Jack, Sour Cream, Cilantro, Choice of Salsa. Tri-Tip, Chicken or Carnitas. No Meat. Just Cheese.", "tags": []},
-        {"name": "NotCho Fries", "description": "Made to Order Fries, Beans, Fresh Onions, Melted Cheddar Jack, Sour Cream, Cilantro, Choice of Salsa. Tri-Tip, Chicken or Carnitas. No Meat. Just Cheese.", "tags": []},
-        {"name": "Grande Quesadilla", "description": "Freshly Grated Cheddar Jack. Just Cheese. Tri-Tip, Chicken or Carnitas.", "tags": []},
-        {"name": "Chips & Salsa", "description": "Made to Order Corn Tortilla Chips with a Side of Salsa Roja (Half Order or Full Order; ADD GUAC or ADD QUESO available in Half or Full Order)", "tags": []}
+        {
+          "name": "Sancho's Nachos",
+          "description": "Made to Order Chips, Beans, Fresh Onions, Melted Cheddar Jack, Sour Cream, Cilantro, Choice of Salsa. Tri-Tip, Chicken or Carnitas. No Meat. Just Cheese.",
+          "tags": []
+        },
+        {
+          "name": "NotCho Fries",
+          "description": "Made to Order Fries, Beans, Fresh Onions, Melted Cheddar Jack, Sour Cream, Cilantro, Choice of Salsa. Tri-Tip, Chicken or Carnitas. No Meat. Just Cheese.",
+          "tags": []
+        },
+        {
+          "name": "Grande Quesadilla",
+          "description": "Freshly Grated Cheddar Jack. Just Cheese. Tri-Tip, Chicken or Carnitas.",
+          "tags": []
+        },
+        {
+          "name": "Chips & Salsa",
+          "description": "Made to Order Corn Tortilla Chips with a Side of Salsa Roja (Half Order or Full Order; ADD GUAC or ADD QUESO available in Half or Full Order)",
+          "tags": []
+        }
       ]
     },
     {
       "name": "Los Ninos",
       "items": [
-        {"name": "Los Ninos Chiquita Quesadilla", "description": "Two Corn Tortillas or One Flour Tortilla with Freshly Grated Cheddar Jack. Add Tri-Tip, Chicken or Carnitas. No substitutions. Cannot add fish or shrimp.", "tags": []},
-        {"name": "Los Ninos Sanchito Taco", "description": "Choice of Angus Tri-tip, Grilled Chicken Breast, or Slow Roasted Carnitas with Shredded Cheddar Jack Cheese.", "tags": []}
+        {
+          "name": "Los Ninos Chiquita Quesadilla",
+          "description": "Two Corn Tortillas or One Flour Tortilla with Freshly Grated Cheddar Jack. Add Tri-Tip, Chicken or Carnitas. No substitutions. Cannot add fish or shrimp.",
+          "tags": []
+        },
+        {
+          "name": "Los Ninos Sanchito Taco",
+          "description": "Choice of Angus Tri-tip, Grilled Chicken Breast, or Slow Roasted Carnitas with Shredded Cheddar Jack Cheese.",
+          "tags": []
+        }
       ]
     },
     {
       "name": "Drinks",
       "items": [
-        {"name": "Fountain", "description": "Regular or Large", "tags": []},
-        {"name": "Apple Juice", "description": "", "tags": []},
-        {"name": "Jarritos", "description": "", "tags": []},
-        {"name": "Water", "description": "", "tags": []}
+        {
+          "name": "Fountain",
+          "description": "Regular or Large",
+          "tags": []
+        },
+        {
+          "name": "Apple Juice",
+          "description": "",
+          "tags": []
+        },
+        {
+          "name": "Jarritos",
+          "description": "",
+          "tags": []
+        },
+        {
+          "name": "Water",
+          "description": "",
+          "tags": []
+        }
       ]
     },
     {
       "name": "Sides",
       "items": [
-        {"name": "Side Spanish Rice", "description": "", "tags": []},
-        {"name": "Side Pinto Beans", "description": "", "tags": []},
-        {"name": "Side Of Avocado", "description": "", "tags": []},
-        {"name": "Side Of Cheese", "description": "", "tags": []},
-        {"name": "Side Of Guac (2 Oz)", "description": "", "tags": []},
-        {"name": "Side Of Sour Cream", "description": "", "tags": []},
-        {"name": "Side Of Verde / Roja", "description": "", "tags": []},
-        {"name": "Side Of Jalapenos / Serrano", "description": "", "tags": []},
-        {"name": "Side Of Chubbie / 5150 / Hector Spicy", "description": "", "tags": []}
+        {
+          "name": "Side Spanish Rice",
+          "description": "",
+          "tags": []
+        },
+        {
+          "name": "Side Pinto Beans",
+          "description": "",
+          "tags": []
+        },
+        {
+          "name": "Side Of Avocado",
+          "description": "",
+          "tags": []
+        },
+        {
+          "name": "Side Of Cheese",
+          "description": "",
+          "tags": []
+        },
+        {
+          "name": "Side Of Guac (2 Oz)",
+          "description": "",
+          "tags": []
+        },
+        {
+          "name": "Side Of Sour Cream",
+          "description": "",
+          "tags": []
+        },
+        {
+          "name": "Side Of Verde / Roja",
+          "description": "",
+          "tags": []
+        },
+        {
+          "name": "Side Of Jalapenos / Serrano",
+          "description": "",
+          "tags": []
+        },
+        {
+          "name": "Side Of Chubbie / 5150 / Hector Spicy",
+          "description": "",
+          "tags": []
+        }
       ]
     },
     {
       "name": "Breakfast",
       "items": [
-        {"name": "Sawed Off Breakfast Burrito", "description": "Fresh Eggs, Skillet Potatoes, Cheddar Jack, Wrapped in a Grilled Flour Tortilla w/ Your Choice of Meat: Applewood Smoked Bacon, Country Sausage, Chorizo or Boneless Chicken Breast. Make as Omelette option available", "tags": []},
-        {"name": "Sawed Off Flaco Breakfast Burrito", "description": "Egg whites, Skillet Potatoes, Sautéed Spinach, Mushrooms, Artichoke Hearts and Avo. *Your choice of salsa. Make as Omelette option available", "tags": []},
-        {"name": "Breakfast Taco", "description": "Fresh Eggs, Skillet Potatoes, Cheddar Jack, Wrapped in a Grilled Flour Tortilla w/ Your Choice of Meat: Applewood Smoked Bacon, Country Sausage, Chorizo or Boneless Chicken Breast", "tags": []},
-        {"name": "Breakfast Flaco Taco", "description": "Egg whites, Skillet Potatoes, Sautéed Spinach, Mushrooms, Artichoke Hearts and Avo. *Your choice of salsa.", "tags": []},
-        {"name": "Breakfast Quesadilla", "description": "Fresh Eggs, Cheddar Jack Cheese, Choice of Meat: Applewood Smoked Bacon, Country Sausage, Chorizo or Boneless Chicken Breast", "tags": []}
+        {
+          "name": "Sawed Off Breakfast Burrito",
+          "description": "Fresh Eggs, Skillet Potatoes, Cheddar Jack, Wrapped in a Grilled Flour Tortilla w/ Your Choice of Meat: Applewood Smoked Bacon, Country Sausage, Chorizo or Boneless Chicken Breast. Make as Omelette option available",
+          "tags": []
+        },
+        {
+          "name": "Sawed Off Flaco Breakfast Burrito",
+          "description": "Egg whites, Skillet Potatoes, Sautéed Spinach, Mushrooms, Artichoke Hearts and Avo. *Your choice of salsa. Make as Omelette option available",
+          "tags": []
+        },
+        {
+          "name": "Breakfast Taco",
+          "description": "Fresh Eggs, Skillet Potatoes, Cheddar Jack, Wrapped in a Grilled Flour Tortilla w/ Your Choice of Meat: Applewood Smoked Bacon, Country Sausage, Chorizo or Boneless Chicken Breast",
+          "tags": []
+        },
+        {
+          "name": "Breakfast Flaco Taco",
+          "description": "Egg whites, Skillet Potatoes, Sautéed Spinach, Mushrooms, Artichoke Hearts and Avo. *Your choice of salsa.",
+          "tags": []
+        },
+        {
+          "name": "Breakfast Quesadilla",
+          "description": "Fresh Eggs, Cheddar Jack Cheese, Choice of Meat: Applewood Smoked Bacon, Country Sausage, Chorizo or Boneless Chicken Breast",
+          "tags": []
+        }
       ]
     },
     {
       "name": "Dessert",
       "items": [
-        {"name": "Churro", "description": "4pc or 8pc", "tags": []}
+        {
+          "name": "Churro",
+          "description": "4pc or 8pc",
+          "tags": []
+        }
       ]
     }
   ]

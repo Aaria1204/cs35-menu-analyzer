@@ -2,85 +2,247 @@
   "restaurant_name": "La Popular",
   "cuisine": "mexican",
   "location": "Claremont, CA",
+  "latitude": 34.106159,
+  "longitude": -117.712732,
   "sections": [
     {
       "name": "Starters",
       "items": [
-        {"name": "Salsa Tray", "description": "salsa llorona / salsa toreado / salsa lorenza / avocado salsa verde / housemade chips", "tags": []},
-        {"name": "Guacamole", "description": "", "tags": []},
-        {"name": "Queso Fundido", "description": "melted manchego cheese / served with corn and flour tortillas (+3 chorizo)", "tags": []},
-        {"name": "Ahi Tuna Tostadas", "description": "crispy leeks / chipotle aioli / soy vinaigrette / avocado", "tags": []},
-        {"name": "Seafood Ceviche", "description": "shrimp / Mahi Mahi / avocado / citrus / serrano peppers / pickled onions / cilantro / plantain chips", "tags": []}
+        {
+          "name": "Salsa Tray",
+          "description": "salsa llorona / salsa toreado / salsa lorenza / avocado salsa verde / housemade chips",
+          "tags": []
+        },
+        {
+          "name": "Guacamole",
+          "description": "",
+          "tags": []
+        },
+        {
+          "name": "Queso Fundido",
+          "description": "melted manchego cheese / served with corn and flour tortillas (+3 chorizo)",
+          "tags": []
+        },
+        {
+          "name": "Ahi Tuna Tostadas",
+          "description": "crispy leeks / chipotle aioli / soy vinaigrette / avocado",
+          "tags": []
+        },
+        {
+          "name": "Seafood Ceviche",
+          "description": "shrimp / Mahi Mahi / avocado / citrus / serrano peppers / pickled onions / cilantro / plantain chips",
+          "tags": []
+        }
       ]
     },
     {
       "name": "Soups & Salads",
       "items": [
-        {"name": "Tortilla Soup", "description": "chicken / fried ancho chiles / tortilla strips / avocado / chicharron / queso fresco / lime", "tags": []},
-        {"name": "House Salad", "description": "lettuce mix / queso fresco / cherry tomato / radish / red onion / croutons / pepitas / cucumber / lime vinaigrette", "tags": []},
-        {"name": "Corn Off the Cob Salad", "description": "mixed greens / avocado / onion / cotija / Tajín / lemon vinaigrette (add steak, shrimp or chicken)", "tags": []}
+        {
+          "name": "Tortilla Soup",
+          "description": "chicken / fried ancho chiles / tortilla strips / avocado / chicharron / queso fresco / lime",
+          "tags": []
+        },
+        {
+          "name": "House Salad",
+          "description": "lettuce mix / queso fresco / cherry tomato / radish / red onion / croutons / pepitas / cucumber / lime vinaigrette",
+          "tags": []
+        },
+        {
+          "name": "Corn Off the Cob Salad",
+          "description": "mixed greens / avocado / onion / cotija / Tajín / lemon vinaigrette (add steak, shrimp or chicken)",
+          "tags": []
+        }
       ]
     },
     {
       "name": "Tacos",
       "items": [
-        {"name": "Carnitas", "description": "3 tacos / picked red onion / guacamole / corn tortilla", "tags": []},
-        {"name": "Ribeye", "description": "3 tacos / Costra style / shaved ribeye / guacamole / pico de gallo / pickled onions / corn tortilla", "tags": []},
-        {"name": "Tinga", "description": "3 tacos / chicken / guacamole / queso fresco / lettuce", "tags": []},
-        {"name": "Street Corn", "description": "3 tacos / tajin crema / cotija cheese / butter / corn nut / cilantro / sweet peppers", "tags": []},
-        {"name": "Creamy Chipotle Shrimp", "description": "3 tacos / refried beans & Mexican rice (yes, in the tortilla) / cabbage / salsa verde / flour tortilla", "tags": []},
-        {"name": "Baja Mahi Mahi", "description": "3 tacos / tempura or grilled Mahi Mahi / chipotle aioli / pico de gallo / coleslaw / corn tortilla", "tags": []},
-        {"name": "Baja Shrimp", "description": "3 tacos / tempura or grilled shrimp / chipotle aioli / pico de gallo / coleslaw / corn tortilla", "tags": []}
+        {
+          "name": "Carnitas",
+          "description": "3 tacos / picked red onion / guacamole / corn tortilla",
+          "tags": []
+        },
+        {
+          "name": "Ribeye",
+          "description": "3 tacos / Costra style / shaved ribeye / guacamole / pico de gallo / pickled onions / corn tortilla",
+          "tags": []
+        },
+        {
+          "name": "Tinga",
+          "description": "3 tacos / chicken / guacamole / queso fresco / lettuce",
+          "tags": []
+        },
+        {
+          "name": "Street Corn",
+          "description": "3 tacos / tajin crema / cotija cheese / butter / corn nut / cilantro / sweet peppers",
+          "tags": []
+        },
+        {
+          "name": "Creamy Chipotle Shrimp",
+          "description": "3 tacos / refried beans & Mexican rice (yes, in the tortilla) / cabbage / salsa verde / flour tortilla",
+          "tags": []
+        },
+        {
+          "name": "Baja Mahi Mahi",
+          "description": "3 tacos / tempura or grilled Mahi Mahi / chipotle aioli / pico de gallo / coleslaw / corn tortilla",
+          "tags": []
+        },
+        {
+          "name": "Baja Shrimp",
+          "description": "3 tacos / tempura or grilled shrimp / chipotle aioli / pico de gallo / coleslaw / corn tortilla",
+          "tags": []
+        }
       ]
     },
     {
       "name": "Enchiladas",
       "items": [
-        {"name": "Suizas Enchiladas", "description": "SHRIMP or PULLED CHICKEN / Suiza sauce / asadero-jack cheese / crema / cilantro / guacamole / red onion", "tags": []},
-        {"name": "Queso Enchiladas", "description": "Colorado or Suiza sauce / asadero-jack cheese / crema / cilantro / guacamole / red onion", "tags": []},
-        {"name": "Short Rib Enchiladas", "description": "Colorado sauce / asadero-jack cheese / crema / cilantro / guacamole / red onion", "tags": []},
-        {"name": "Mole Enchiladas", "description": "pulled chicken / mole sauce / cotija cheese / red onion / cilantro / guacamole / crema", "tags": []}
+        {
+          "name": "Suizas Enchiladas",
+          "description": "SHRIMP or PULLED CHICKEN / Suiza sauce / asadero-jack cheese / crema / cilantro / guacamole / red onion",
+          "tags": []
+        },
+        {
+          "name": "Queso Enchiladas",
+          "description": "Colorado or Suiza sauce / asadero-jack cheese / crema / cilantro / guacamole / red onion",
+          "tags": []
+        },
+        {
+          "name": "Short Rib Enchiladas",
+          "description": "Colorado sauce / asadero-jack cheese / crema / cilantro / guacamole / red onion",
+          "tags": []
+        },
+        {
+          "name": "Mole Enchiladas",
+          "description": "pulled chicken / mole sauce / cotija cheese / red onion / cilantro / guacamole / crema",
+          "tags": []
+        }
       ]
     },
     {
       "name": "Platos Especiales",
       "items": [
-        {"name": "Burrito", "description": "birria, chicken, or carnitas / refried beans / Mexican rice / pico de gallo", "tags": []},
-        {"name": "Quesabirria", "description": "2 tacos / braised short rib / asadero-jack cheese / refried beans / Mexican rice / consommé", "tags": []},
-        {"name": "Combo Plate", "description": "your choice of: any enchilada, any taco / served with rice and beans", "tags": []},
-        {"name": "Carne Asada", "description": "skirt steak / chimichurri butter / guacamole / pico de gallo / sour cream / pickled red onions / rice / beans / tortillas", "tags": []},
-        {"name": "Fajitas", "description": "choice of chicken / shrimp / steak / or combo of two / charred jalapeños / onions / bell pepper / guacamole / sour cream / rice / beans", "tags": []},
-        {"name": "Chicken Mole Poblano", "description": "half chicken / mole / sesame seeds / rice / beans", "tags": []}
+        {
+          "name": "Burrito",
+          "description": "birria, chicken, or carnitas / refried beans / Mexican rice / pico de gallo",
+          "tags": []
+        },
+        {
+          "name": "Quesabirria",
+          "description": "2 tacos / braised short rib / asadero-jack cheese / refried beans / Mexican rice / consommé",
+          "tags": []
+        },
+        {
+          "name": "Combo Plate",
+          "description": "your choice of: any enchilada, any taco / served with rice and beans",
+          "tags": []
+        },
+        {
+          "name": "Carne Asada",
+          "description": "skirt steak / chimichurri butter / guacamole / pico de gallo / sour cream / pickled red onions / rice / beans / tortillas",
+          "tags": []
+        },
+        {
+          "name": "Fajitas",
+          "description": "choice of chicken / shrimp / steak / or combo of two / charred jalapeños / onions / bell pepper / guacamole / sour cream / rice / beans",
+          "tags": []
+        },
+        {
+          "name": "Chicken Mole Poblano",
+          "description": "half chicken / mole / sesame seeds / rice / beans",
+          "tags": []
+        }
       ]
     },
     {
       "name": "Sides",
       "items": [
-        {"name": "Side Salad", "description": "", "tags": []},
-        {"name": "Fried Plantains", "description": "", "tags": []},
-        {"name": "Tajín Fries", "description": "", "tags": []},
-        {"name": "Street Corn", "description": "", "tags": []},
-        {"name": "Rice", "description": "", "tags": []},
-        {"name": "Refried Beans", "description": "", "tags": []},
-        {"name": "Half Rice & Beans", "description": "", "tags": []}
+        {
+          "name": "Side Salad",
+          "description": "",
+          "tags": []
+        },
+        {
+          "name": "Fried Plantains",
+          "description": "",
+          "tags": []
+        },
+        {
+          "name": "Tajín Fries",
+          "description": "",
+          "tags": []
+        },
+        {
+          "name": "Street Corn",
+          "description": "",
+          "tags": []
+        },
+        {
+          "name": "Rice",
+          "description": "",
+          "tags": []
+        },
+        {
+          "name": "Refried Beans",
+          "description": "",
+          "tags": []
+        },
+        {
+          "name": "Half Rice & Beans",
+          "description": "",
+          "tags": []
+        }
       ]
     },
     {
       "name": "Dulces",
       "items": [
-        {"name": "Churros", "description": "chocolate sauce / cajeta", "tags": []},
-        {"name": "Flan", "description": "vanilla ice cream / caramel", "tags": []},
-        {"name": "Butter Cake", "description": "strawberries / passion fruit custard / vanilla ice cream", "tags": []},
-        {"name": "Turtle Pie", "description": "peanut butter / chocolate / caramel / candied pecans", "tags": []}
+        {
+          "name": "Churros",
+          "description": "chocolate sauce / cajeta",
+          "tags": []
+        },
+        {
+          "name": "Flan",
+          "description": "vanilla ice cream / caramel",
+          "tags": []
+        },
+        {
+          "name": "Butter Cake",
+          "description": "strawberries / passion fruit custard / vanilla ice cream",
+          "tags": []
+        },
+        {
+          "name": "Turtle Pie",
+          "description": "peanut butter / chocolate / caramel / candied pecans",
+          "tags": []
+        }
       ]
     },
     {
       "name": "Kids' Menu",
       "items": [
-        {"name": "Kids Chicken or Steak Tacos", "description": "two each", "tags": []},
-        {"name": "Kids Cheese Quesadilla", "description": "", "tags": []},
-        {"name": "Kids Chicken Bowl", "description": "Mexican rice and beans", "tags": []},
-        {"name": "Kids Burrito", "description": "flour Tortilla, rice, beans, cheese", "tags": []}
+        {
+          "name": "Kids Chicken or Steak Tacos",
+          "description": "two each",
+          "tags": []
+        },
+        {
+          "name": "Kids Cheese Quesadilla",
+          "description": "",
+          "tags": []
+        },
+        {
+          "name": "Kids Chicken Bowl",
+          "description": "Mexican rice and beans",
+          "tags": []
+        },
+        {
+          "name": "Kids Burrito",
+          "description": "flour Tortilla, rice, beans, cheese",
+          "tags": []
+        }
       ]
     }
   ]
