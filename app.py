@@ -16,6 +16,7 @@ from pathlib import Path
 from typing import Dict, List
 
 import pandas as pd
+import pydeck as pdk
 import streamlit as st
 
 # ---------------------------------------------------------------------------
@@ -210,9 +211,16 @@ def score_to_color(score_pct: float) -> str:
     return COLOR_UNSAFE
 
 
-def score_to_size(score_pct: float) -> float:
-    """Pin radius in meters. Higher score = larger pin. Range ~150–700m."""
-    return 150 + (score_pct / 100.0) * 550
+def score_to_radius_px(score_pct: float) -> float:
+    """Pin radius in pixels. Higher score = larger pin. Range 8–20px."""
+    s = max(0.0, min(100.0, score_pct))
+    return 8.0 + (s / 100.0) * 12.0
+
+
+def hex_to_rgb(hex_str: str) -> List[int]:
+    """Convert '#2E7D32' -> [46, 125, 50]."""
+    h = hex_str.lstrip("#")
+    return [int(h[i:i + 2], 16) for i in (0, 2, 4)]
 
 
 # ---------------------------------------------------------------------------
@@ -344,17 +352,59 @@ for fname in menu_files:
     if lat is None or lng is None:
         continue
     s = compute_friendliness(classified_by_file[fname], strict_mode)
+    rgb = hex_to_rgb(score_to_color(s["score_pct"]))
     map_rows.append({
         "lat": float(lat),
         "lon": float(lng),
-        "size": score_to_size(s["score_pct"]),
-        "color": score_to_color(s["score_pct"]),
-        "Restaurant": raw.get("restaurant_name") or fname,
+        "name": raw.get("restaurant_name") or fname,
+        "score": round(s["score_pct"], 1),
+        "safe": s["safe_count"],
+        "uncertain": s["uncertain_count"],
+        "unsafe": s["unsafe_count"],
+        "color": rgb + [220],  # RGBA, alpha 220
+        "radius": score_to_radius_px(s["score_pct"]),
     })
 
 if map_rows:
     map_df = pd.DataFrame(map_rows)
-    st.map(map_df, latitude="lat", longitude="lon", size="size", color="color")
+    layer = pdk.Layer(
+        "ScatterplotLayer",
+        data=map_df,
+        get_position=["lon", "lat"],
+        get_fill_color="color",
+        get_radius="radius",
+        radius_units="pixels",
+        radius_min_pixels=8,
+        radius_max_pixels=20,
+        pickable=True,
+        stroked=True,
+        get_line_color=[255, 255, 255, 230],
+        line_width_min_pixels=1,
+    )
+    center_lat = sum(r["lat"] for r in map_rows) / len(map_rows)
+    center_lng = sum(r["lon"] for r in map_rows) / len(map_rows)
+    deck = pdk.Deck(
+        layers=[layer],
+        initial_view_state=pdk.ViewState(latitude=center_lat, longitude=center_lng, zoom=13),
+        tooltip={
+            "html": (
+                "<b>{name}</b><br/>"
+                "Score: {score}%<br/>"
+                "{safe} safe · {uncertain} uncertain · {unsafe} unsafe"
+            ),
+            "style": {
+                "backgroundColor": "white",
+                "color": "#1A1A1A",
+                "fontSize": "12px",
+                "padding": "8px 10px",
+                "borderRadius": "6px",
+                "boxShadow": "0 2px 6px rgba(0,0,0,0.18)",
+            },
+        },
+        map_provider="carto",
+        map_style="light",
+    )
+    st.pydeck_chart(deck)
 else:
     st.info("No restaurants have latitude/longitude set yet — add them to the menu JSONs to see the map.")
 
